@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 }
 
 // Menghubungkan ke database
-require 'includes/config.php';
+require 'includes/koneksi.php';
 
 // Menangani pengaturan yang disimpan
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
